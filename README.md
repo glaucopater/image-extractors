@@ -8,7 +8,7 @@ Both Poppler and XPDFTools contain the pdfimages tool
 
 Usage
 
-pdfimages -j .\sample\manual.pdf output\
+pdfimages -j .\sample\manual.pdf
 
 - PROS fast, can extract images and fonts keeping the original formats
 
@@ -16,7 +16,7 @@ pdfimages -j .\sample\manual.pdf output\
 
 - OS: windows / Linux / MacOS / Android
 
-mutool extract ..\sample\manual.pdf
+mutool extract .\sample\manual.pdf
 
 - PROS really fast, can extract images and fonts keeping the original formats
 - CONS the library is in C
