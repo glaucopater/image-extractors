@@ -1,4 +1,4 @@
-# Libraries and tools for extracting images from PDF files
+# A list of libraries and tools for extracting images from PDF files
 
 # Poppler / XPdfTools (http://www.xpdfreader.com/download.html)
 
@@ -14,7 +14,7 @@ pdfimages -j .\sample\manual.pdf output\
 
 # MUPDF (https://www.mupdf.com/downloads/index.html)
 
--- OS: windows / Linux / MacOS / Android
+- OS: windows / Linux / MacOS / Android
 
 mutool extract ..\sample\manual.pdf
 
