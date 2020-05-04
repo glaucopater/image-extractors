@@ -1,13 +1,16 @@
 # Libraries and tools for extracting images from PDF files
 
-# Poppler / XPdfTools
+# Poppler / XPdfTools (http://www.xpdfreader.com/download.html)
 
--- OS: windows / Linux / MacOS
-Both contains the pdfimages tools
+- OS: windows / Linux / MacOS
+
+Both Poppler and XPDFTools contain the pdfimages tool
+
+Usage
 
 pdfimages -j .\sample\manual.pdf output\
 
-PROS fast, can extract images and fonts keeping the original formats
+- PROS fast, can extract images and fonts keeping the original formats
 
 # MUPDF (https://www.mupdf.com/downloads/index.html)
 
@@ -15,9 +18,10 @@ PROS fast, can extract images and fonts keeping the original formats
 
 mutool extract ..\sample\manual.pdf
 
-PROS really fast, can extract images and fonts keeping the original formats
+- PROS really fast, can extract images and fonts keeping the original formats
+- CONS the library is in C
 
-# Raw and dirty Python(2) script
+# Raw and dirty Python script
 
 ```
 import sys
@@ -58,7 +62,10 @@ while True:
     i = iend
 ```
 
-python ..\tools\custom\extract.py ..\sample\manual.pdf
+Usage (cloning this repo):
+python ..\script\extract.py ..\sample\manual.pdf
 
-PROS really really fast, no dependencies
-CONS to be implemented work and extended for other formats (extract only jpegs)
+- PROS really really fast, no dependencies
+- CONS needs more implementation for other image formats
+
+# Other resources (https://commons.wikimedia.org/wiki/Commons:Extracting_images_from_PDF)
